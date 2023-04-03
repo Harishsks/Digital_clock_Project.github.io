@@ -13,16 +13,30 @@
     <div class="container">
         <div class="box" id="box1"> </div>
         <div class="box" id="box2">
-            <p>The message and Image will change according to the time</p>
         </div>
-        <div class="box" id="box3"><div id="Time">
-            <div class="timebox" id="Hour"><h1>00</h1><p>hour</p></div>
-            <div class="timebox" id="Minutes"><h1>00</h1><p>Minutes</p></div>
-            <div class="timebox" id="second"><h1>01</h1><p>Second</p></div>
-        </div>
+        <div class="box" id="box3">
+            <div id="Time">
+                <div class="timebox" id="Hour">
+                    <h1 id="H">00</h1>
+                    <p>hour</p>
+                </div>
+                <span class="colon">:</span>
+                <div class="timebox" id="Minutes">
+                    <h1 id="M">00</h1>
+                    <p>Minutes</p>
+                </div>
+                <span class="colon">:</span>
+                <div class="timebox" id="second">
+                    <h1 id="S">01</h1>
+                    <p>Second</p>
+                </div>
+                <div class="timebox" id="am">
+                    <h1 id="ampm">AM</h1>
+                </div>
+            </div>
         </div>
         <div class="box" id="box4">
-            <h2>GOOD MORNING!! WAKE UP !!</h2>
+            <h2 id="msg1">GOOD MORNING!! WAKE UP !!</h2>
         </div>
         <div class="box" id="box5"><br>
             <div class="setw">
@@ -30,7 +44,7 @@
                 <div>
                     <p>Set wake up time</p>
                 </div>
-                <div><select>
+                <div><select id="set_wakeup">
                         <option value="1">12AM-01AM</option>
                         <option value="2">01AM-02AM</option>
                         <option value="3">20Am-03AM</option>
@@ -62,31 +76,31 @@
                 <div>
                     <p>Set lunch time</p>
                 </div>
-                <div><select>
-                    <option value="1">12AM-01AM</option>
-                    <option value="2">01AM-02AM</option>
-                    <option value="3">20Am-03AM</option>
-                    <option value="4">03AM-04Am</option>
-                    <option value="5">04AM-05Am</option>
-                    <option value="6">05AM-06Am</option>
-                    <option value="7">06AM-07Am</option>
-                    <option value="8">07AM-08Am</option>
-                    <option value="9">08AM-09Am</option>
-                    <option value="10">09AM-10Am</option>
-                    <option value="11">10AM-11Am</option>
-                    <option value="12">11AM-12Pm</option>
-                    <option value="13">12PM-01PM</option>
-                    <option value="14">01PM-02PM</option>
-                    <option value="15">20PM-03PM</option>
-                    <option value="16">03PM-04PM</option>
-                    <option value="17">04PM-05PM</option>
-                    <option value="18">05PM-06PM</option>
-                    <option value="19">06PM-07PM</option>
-                    <option value="20">07PM-08PM</option>
-                    <option value="21">08PM-09PM</option>
-                    <option value="22">09PM-10PM</option>
-                    <option value="23">10PM-11PM</option>
-                    <option value="24">11PM-12AM</option>
+                <div><select id="set_lunch">
+                        <option value="1">12AM-01AM</option>
+                        <option value="2">01AM-02AM</option>
+                        <option value="3">20Am-03AM</option>
+                        <option value="4">03AM-04Am</option>
+                        <option value="5">04AM-05Am</option>
+                        <option value="6">05AM-06Am</option>
+                        <option value="7">06AM-07Am</option>
+                        <option value="8">07AM-08Am</option>
+                        <option value="9">08AM-09Am</option>
+                        <option value="10">09AM-10Am</option>
+                        <option value="11">10AM-11Am</option>
+                        <option value="12">11AM-12Pm</option>
+                        <option value="13">12PM-01PM</option>
+                        <option value="14">01PM-02PM</option>
+                        <option value="15">20PM-03PM</option>
+                        <option value="16">03PM-04PM</option>
+                        <option value="17">04PM-05PM</option>
+                        <option value="18">05PM-06PM</option>
+                        <option value="19">06PM-07PM</option>
+                        <option value="20">07PM-08PM</option>
+                        <option value="21">08PM-09PM</option>
+                        <option value="22">09PM-10PM</option>
+                        <option value="23">10PM-11PM</option>
+                        <option value="24">11PM-12AM</option>
                     </select></div>
             </div><br>
             <div class="setna">
@@ -94,31 +108,31 @@
                 <div>
                     <p>Set nap time</p>
                 </div>
-                <div><select>
-                    <option value="1">12AM-01AM</option>
-                    <option value="2">01AM-02AM</option>
-                    <option value="3">20Am-03AM</option>
-                    <option value="4">03AM-04Am</option>
-                    <option value="5">04AM-05Am</option>
-                    <option value="6">05AM-06Am</option>
-                    <option value="7">06AM-07Am</option>
-                    <option value="8">07AM-08Am</option>
-                    <option value="9">08AM-09Am</option>
-                    <option value="10">09AM-10Am</option>
-                    <option value="11">10AM-11Am</option>
-                    <option value="12">11AM-12Pm</option>
-                    <option value="13">12PM-01PM</option>
-                    <option value="14">01PM-02PM</option>
-                    <option value="15">20PM-03PM</option>
-                    <option value="16">03PM-04PM</option>
-                    <option value="17">04PM-05PM</option>
-                    <option value="18">05PM-06PM</option>
-                    <option value="19">06PM-07PM</option>
-                    <option value="20">07PM-08PM</option>
-                    <option value="21">08PM-09PM</option>
-                    <option value="22">09PM-10PM</option>
-                    <option value="23">10PM-11PM</option>
-                    <option value="24">11PM-12AM</option>
+                <div><select id="set_nap">
+                        <option value="1">12AM-01AM</option>
+                        <option value="2">01AM-02AM</option>
+                        <option value="3">20Am-03AM</option>
+                        <option value="4">03AM-04Am</option>
+                        <option value="5">04AM-05Am</option>
+                        <option value="6">05AM-06Am</option>
+                        <option value="7">06AM-07Am</option>
+                        <option value="8">07AM-08Am</option>
+                        <option value="9">08AM-09Am</option>
+                        <option value="10">09AM-10Am</option>
+                        <option value="11">10AM-11Am</option>
+                        <option value="12">11AM-12Pm</option>
+                        <option value="13">12PM-01PM</option>
+                        <option value="14">01PM-02PM</option>
+                        <option value="15">20PM-03PM</option>
+                        <option value="16">03PM-04PM</option>
+                        <option value="17">04PM-05PM</option>
+                        <option value="18">05PM-06PM</option>
+                        <option value="19">06PM-07PM</option>
+                        <option value="20">07PM-08PM</option>
+                        <option value="21">08PM-09PM</option>
+                        <option value="22">09PM-10PM</option>
+                        <option value="23">10PM-11PM</option>
+                        <option value="24">11PM-12AM</option>
                     </select></div>
             </div><br>
             <div class="setni">
@@ -126,47 +140,104 @@
                 <div>
                     <p>Set night time</p>
                 </div>
-                <div><select>
-                    <option value="1">12AM-01AM</option>
-                    <option value="2">01AM-02AM</option>
-                    <option value="3">20Am-03AM</option>
-                    <option value="4">03AM-04Am</option>
-                    <option value="5">04AM-05Am</option>
-                    <option value="6">05AM-06Am</option>
-                    <option value="7">06AM-07Am</option>
-                    <option value="8">07AM-08Am</option>
-                    <option value="9">08AM-09Am</option>
-                    <option value="10">09AM-10Am</option>
-                    <option value="11">10AM-11Am</option>
-                    <option value="12">11AM-12Pm</option>
-                    <option value="13">12PM-01PM</option>
-                    <option value="14">01PM-02PM</option>
-                    <option value="15">20PM-03PM</option>
-                    <option value="16">03PM-04PM</option>
-                    <option value="17">04PM-05PM</option>
-                    <option value="18">05PM-06PM</option>
-                    <option value="19">06PM-07PM</option>
-                    <option value="20">07PM-08PM</option>
-                    <option value="21">08PM-09PM</option>
-                    <option value="22">09PM-10PM</option>
-                    <option value="23">10PM-11PM</option>
-                    <option value="24">11PM-12AM</option>
+                <div><select id="set_night">
+                        <option value="1">12AM-01AM</option>
+                        <option value="2">01AM-02AM</option>
+                        <option value="3">20Am-03AM</option>
+                        <option value="4">03AM-04Am</option>
+                        <option value="5">04AM-05Am</option>
+                        <option value="6">05AM-06Am</option>
+                        <option value="7">06AM-07Am</option>
+                        <option value="8">07AM-08Am</option>
+                        <option value="9">08AM-09Am</option>
+                        <option value="10">09AM-10Am</option>
+                        <option value="11">10AM-11Am</option>
+                        <option value="12">11AM-12Pm</option>
+                        <option value="13">12PM-01PM</option>
+                        <option value="14">01PM-02PM</option>
+                        <option value="15">20PM-03PM</option>
+                        <option value="16">03PM-04PM</option>
+                        <option value="17">04PM-05PM</option>
+                        <option value="18">05PM-06PM</option>
+                        <option value="19">06PM-07PM</option>
+                        <option value="20">07PM-08PM</option>
+                        <option value="21">08PM-09PM</option>
+                        <option value="22">09PM-10PM</option>
+                        <option value="23">10PM-11PM</option>
+                        <option value="24">11PM-12AM</option>
                     </select></div>
             </div>
         </div>
         <div class="box" id="box6">
-            <h2>Set Alarm</h2>
+            <h2 id="change">Set Alarm</h2>
         </div>
         <div class="box" id="box7">
-            <h2>GRAB SOME HEALTHY BREAKFAST!!!</h2>
+            <h2 id="msg2">GRAB SOME HEALTHY BREAKFAST!!!</h2>
         </div>
         <div class="box" id="box8">
             <p>Wake Up Time : 10AM - 11AM <br> Lunch Time : 12PM - 1PM <br> Nap Time : 4PM - 5PM <br> Night Time :
                 8PM-9AM</p>
         </div>
         <div class="box" id="box11"></div>
-
     </div>
+    <script>
+        function updateTime() {
+            // Get current time
+            const now = new Date();
+            let hours = now.getHours();
+            let hoursall = now.getHours();
+            let amOrPm = hours < 12 ? "AM" : "PM";
+            let setwake = document.getElementById("set_wakeup").value;
+            let setnap = document.getElementById("set_nap").value;
+            let setlunch = document.getElementById("set_lunch").value;
+            let setnight = document.getElementById("set_night").value;
+            var img = document.getElementById("box11");
+
+
+            // Format time as digital clock
+            hours = hours % 12 || 12;
+            const minutes = now.getMinutes().toString().padStart(2, "0");
+            const seconds = now.getSeconds().toString().padStart(2, "0");
+            const time = `${hours}:${minutes}:${seconds}`;
+            document.getElementById("H").innerHTML = hours;
+            document.getElementById("M").innerHTML = minutes;
+            document.getElementById("S").innerHTML = seconds;
+            document.getElementById("ampm").innerHTML = amOrPm;
+
+
+            // Update clock display
+            if (hoursall < setwake) {
+                document.getElementById("msg1").innerHTML = "GOOD MORNING!! WAKE UP !!";
+                document.getElementById("msg2").innerHTML = "GRAB SOME HEALTHY BREAKFAST!!!";
+                img.style.backgroundImage = "url(./wakeup.png)";
+                console.log(setwake)
+            }
+            if (hoursall < setlunch) {
+                document.getElementById("msg1").innerHTML = "GOOD AFTERNOON !! TAKE SOME SLEEP";
+                document.getElementById("msg2").innerHTML = "LET'S HAVE SOME LUNCH !!";
+                img.style.backgroundImage = "url(./lunch.png)";
+                console.log(setlunch)
+            }
+            if (hoursall < setnap) {
+                document.getElementById("msg1").innerHTML = "GOOD EVENING !!";
+                document.getElementById("msg2").innerHTML = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
+                img.style.backgroundImage = "url(./nap.png)";
+                console.log(setnap)
+            }
+            if (hoursall < setnight) {
+                document.getElementById("msg1").innerHTML = "GOOD NIGHT !!";
+                document.getElementById("msg2").innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP";
+                img.style.backgroundImage = "url(./night.png)";
+                console.log(setnight)
+            }
+
+        }
+
+        // Call updateTime function every second
+        setInterval(updateTime, 1000);
+
+
+    </script>
 </body>
 
 </html>

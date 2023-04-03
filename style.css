@@ -12,6 +12,10 @@ body{
 .box{
     border-radius: 10px;
 }
+.colon{
+    color: #3D087B;
+    font-size: xx-large;
+}
 #box1{
         margin-top: 20px;   
         background-image: url(./clock_logo@2x.png);
@@ -19,14 +23,7 @@ body{
         height: 102px;
         margin-top: 5px;
 }
-#box2{
-    height: 65px;
-    width: 200px;
-    color: gray;
-    text-align: center;
-    background-color: white;
-    
-}
+
 #box3{
     background-color: white;
     grid-column: 3/5;
@@ -39,6 +36,7 @@ body{
     color: white;
 }
 #box7{
+    color: #8E53F0;
     background-color: white;
     grid-column: 3/5;
     grid-row: 2/3;
@@ -52,7 +50,7 @@ body{
     grid-row: 3/6;
     margin-top: 50px;
     height: 350px;
-    background-image: url(./Component\ 30\ –\ 1.png);
+    background-image: url(./night.png);
     background-size: contain;
 }
 #box5{
@@ -60,6 +58,7 @@ body{
     grid-column: 1/3;
     grid-row: 2/5;
     margin-top: 10px;
+    width: 514px;
 }
 #box4{
     grid-column: 1/3;
@@ -71,6 +70,9 @@ body{
     width: 250px;
     background-image: linear-gradient(#6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
     border-radius: 0%;
+}
+#change:hover{
+    content: "Party time!";
 }
 #box8{
     color: #F25CFE;
@@ -121,4 +123,10 @@ select{
     gap: 10px;
     text-align: center;
 }
-
+#ampm{
+    margin: 33px 10px 10px 10px ;
+}
+#am{
+    background-image: linear-gradient(#3418c2,#CB52F8,#FC5EFF,#F1A7C5);
+    color: white;
+}
